@@ -13,6 +13,7 @@
 #include "kinem/EDepSimVCountFactory.hh"
 #include "kinem/EDepSimFixedCountFactory.hh"
 #include "kinem/EDepSimMeanCountFactory.hh"
+#include "kinem/EDepSimHEPEVTCountFactory.hh"
 
 #include "kinem/EDepSimVPositionFactory.hh"
 #include "kinem/EDepSimFreePositionFactory.hh"
@@ -72,6 +73,7 @@ EDepSim::UserPrimaryGeneratorMessenger::UserPrimaryGeneratorMessenger(
 
     AddCountFactory(new EDepSim::FixedCountFactory(this));
     AddCountFactory(new EDepSim::MeanCountFactory(this));
+    AddCountFactory(new EDepSim::HEPEVTCountFactory(this));
 
     AddPositionFactory(new EDepSim::FreePositionFactory(this));
     AddPositionFactory(new EDepSim::FixedPositionFactory(this));
