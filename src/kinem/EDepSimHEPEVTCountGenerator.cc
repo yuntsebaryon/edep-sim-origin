@@ -1,6 +1,7 @@
 #include "kinem/EDepSimVCountGenerator.hh"
 #include "kinem/EDepSimHEPEVTCountGenerator.hh"
 
+#include <vector>
 #include <limits>
 
 constexpr int aBigNumber = std::numeric_limits<int>::max();

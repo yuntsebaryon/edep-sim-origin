@@ -3,6 +3,7 @@
 
 #include <string>
 #include <fstream>
+#include <vector>
 
 #include "kinem/EDepSimVCountGenerator.hh"
 #include "kinem/EDepSimNoMoreEvents.hh"
